@@ -9,7 +9,7 @@ import Summary from './Forms/Summary';
 import initialValues from './components/initialvalues';
 import { useState } from 'react';
 import Header from './components/Header/Header';
-import subHeader from './components/Subheader/subHeader';
+import SubHeader from './components/SubHeader/SubHeader';
 
 const getRenderingForm = step => {
   switch (step) {
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <div className='App'>
       <Header />
-      <subHeader />
+      <SubHeader />
       <Formik initialValues={initialValues} validationSchema={schemaValidation[activeStep]} onSubmit={hadleSubmit}>
         <Form>
           {getRenderingForm(activeStep)}

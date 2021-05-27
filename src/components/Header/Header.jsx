@@ -4,7 +4,7 @@ import src from '../../Assets/vahak-logo.png';
 export default function Header() {
   return (
     <div className='heade-container'>
-      <img className='heder-logo' src={src}></img>
+      <img className='header-log' src={src}></img>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import schemaValidation from './components/validation';
 import { Formik, Form } from 'formik';
 import Form1 from './Forms/Form1';
@@ -8,6 +8,7 @@ import Form4 from './Forms/Form4';
 import Summary from './Forms/Summary';
 import initialValues from './components/initialvalues';
 import { useState } from 'react';
+import Header from './components/Header/Header';
 
 const getRenderingForm = step => {
   switch (step) {
@@ -41,9 +42,8 @@ const App = () => {
     }
   };
   return (
-    <div className='app'>
-      {console.log(schemaValidation[activeStep], initialValues)}
-
+    <div className='App'>
+      <Header />
       <Formik initialValues={initialValues} validationSchema={schemaValidation[activeStep]} onSubmit={hadleSubmit}>
         <Form>
           {getRenderingForm(activeStep)}

@@ -5,8 +5,10 @@ export default function Header() {
   return (
     <div className='heade-container'>
       <div className='header-div'>
-        <img className='header-log' src={src} />
-        <span className='header-text'>Vahak</span>
+        <p>
+          <img className='header-log' src={src} />
+          <span className='header-text'>Vahak</span>
+        </p>
       </div>
     </div>
   );

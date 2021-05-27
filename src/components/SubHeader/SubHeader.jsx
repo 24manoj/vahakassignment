@@ -3,7 +3,7 @@ import './subheader.scss';
 export default function SubHeader() {
   return (
     <div className='subheader-appbar'>
-      <p>Place your bid</p>
+      <p className='subheader-text'>Place your bid</p>
     </div>
   );
 }

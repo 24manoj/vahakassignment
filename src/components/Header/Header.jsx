@@ -4,8 +4,10 @@ import src from '../../Assets/Startup.jpeg';
 export default function Header() {
   return (
     <div className='heade-container'>
-      <img className='header-log' src={src} />
-      <p>Vahak</p>
+      <div className='header-div'>
+        <img className='header-log' src={src} />
+        <span className='header-text'>Vahak</span>
+      </div>
     </div>
   );
 }

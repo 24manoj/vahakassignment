@@ -46,12 +46,14 @@ const App = () => {
     <div className='App'>
       <Header />
       <SubHeader />
-      <Formik initialValues={initialValues} validationSchema={schemaValidation[activeStep]} onSubmit={hadleSubmit}>
-        <Form>
-          {getRenderingForm(activeStep)}
-          <button type='submit'>submit</button>
-        </Form>
-      </Formik>
+      <div>
+        <Formik initialValues={initialValues} validationSchema={schemaValidation[activeStep]} onSubmit={hadleSubmit}>
+          <Form>
+            {getRenderingForm(activeStep)}
+            <button type='submit'>submit</button>
+          </Form>
+        </Formik>
+      </div>
     </div>
   );
 };

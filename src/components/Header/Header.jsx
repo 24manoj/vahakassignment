@@ -7,7 +7,7 @@ export default function Header() {
       <div className='header-div'>
         <p>
           <img className='header-log' src={src} />
-          <span className='header-text'>Vahak</span>
+          Vahak
         </p>
       </div>
     </div>
